@@ -2,7 +2,7 @@
 
 A small web tool that takes your daily **sleep, water and step count**, predicts whether you hit your daily goal, and gives you a short coaching message, all on one page with no reload.
 
-![Daily Coach showing a result](docs/screenshot-result.png)
+<img src="docs/screenshot-result.png" alt="Result screen" width="360">
 
 ## What does it do?
 
@@ -56,9 +56,18 @@ python app.py
 
 ## What does the output look like?
 
-**A successful run** (name `Mawazo`, 7 hours of sleep, 6 glasses of water, 8000 steps):
+<table>  
+  <tr>
+    <td align="center">A successful result</td>
+    <td align="center">Bad input shows an error</td>
+  </tr>
+  <tr>
+    <td><img src="docs/screenshot-result.png" alt="Result screen" width="300"></td>
+    <td><img src="docs/screenshot-error.png" alt="Error screen" width="300"></td>
+  </tr>
+</table>
 
-![Result screen](docs/screenshot-result.png)
+**A successful run** (name `Mawazo`, 7 hours of sleep, 6 glasses of water, 8000 steps):
 
 As text:
 
@@ -73,8 +82,6 @@ Hit the goal despite low water. Sleep is the primary driver. Close the hydration
 ```
 
 **Bad input** shows a red message under the button and no result. For example, 30 hours of sleep:
-
-![Error screen](docs/screenshot-error.png)
 
 **The raw API reply** behind the success screen (`POST /api/coach`):
 
