@@ -28,7 +28,7 @@ Each habit is capped at its own goal, so extra steps can't make up for missing s
 
 This is a Week 8 project from an AI Masterclass, on JavaScript and browser tools. The brief was to build a complete browser tool that accepts daily inputs, runs a rule-based prediction, generates a coaching message, and shows results in a live UI without a page reload.
 
-I first built it fully in the browser. This repo is the second version, where the logic moves to a Python Flask backend and the page talks to it with the JavaScript Fetch API. That practises how a front end and a back end work together: JSON requests, input validation on both sides, and CORS.
+I first built it fully in the browser (https://mawazob.github.io/daily-coach/). This repo is the second version, where the logic moves to a Python Flask backend and the page talks to it with the JavaScript Fetch API. That practises how a front end and a back end work together: JSON requests, input validation on both sides, and CORS.
 
 There is no machine learning here. The "prediction" is a transparent set of rules, which makes it easy to read and change.
 
